@@ -2,10 +2,8 @@ import styled from 'styled-components';
 import image3 from '../src/assets/2.png';
 import image2 from '../src/assets/3.png';
 import image1 from '../src/assets/1.png';
-import { Website, Header, Navbar, NavLink, Row, Side, Main, Footer } from './styles';
-
-
-
+import { Website, Header, Navbar, NavLink, Row, Side, Main, Footer, Copyright } from './styles';
+import Form from './components/form';
 
 const App = () => {
   return (
@@ -33,19 +31,25 @@ const App = () => {
             <Image src={image2}/>
             
             <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-            <h3>More Text</h3>
+           <Button>more</Button>
           </Side>
           <Main>
             <Text>Romântica Teatral com Essência Ingênua</Text>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+           
             <br />
             <Image src={image1} alt="Image description" />
+
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
           </Main>
         </Row>
 
         <Footer>
-          <h2>by Mandiegr</h2>
+         By @Mandiegr
         </Footer>
+
+        <Form />
       </div>
     </Website>
   );
@@ -53,14 +57,34 @@ const App = () => {
 
 export default App;
 
-
- const Text = styled.h2`
+const Text = styled.h2`
   font-family: "Tinos";
   font-size: 60px;
 `;
- const Image = styled.img`
+
+const Image = styled.img`
   display: flex;
   width: 100%;
   height: auto;
   margin: 0 auto; 
+`;
+
+const Button = styled.button`
+  padding: 10px 50px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  background-color: #8F967F;
+  color: #ffffff;
+
+  &:hover {
+    background-color:#6b705f;
+  }
+
+  &[disabled] {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+  }
 `;
