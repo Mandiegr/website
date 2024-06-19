@@ -25,7 +25,7 @@ export const NavLink = styled.a`
   text-align: center;
 
   &:hover {
-    background-color: #ddd;
+    background-color: #DED8CC;
     color: black;
   }
 `;
@@ -63,3 +63,7 @@ export const Footer = styled.footer`
   background: #6b705f;
 `;
 
+export const Copyright = styled.p`
+  font-size: 14px;
+  color: #fff;
+`;
