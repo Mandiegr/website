@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import image3 from '../src/assets/2.png';
 import image2 from '../src/assets/3.png';
 import image1 from '../src/assets/1.png';
-import { Website, Header, Navbar, NavLink, Row, Side, Main, Footer, Copyright } from './styles';
+import { Website, Header, Navbar, NavLink, Row, Side, Main, Footer } from './styles';
 import Form from './components/form';
 
 const App = () => {

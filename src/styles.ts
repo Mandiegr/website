@@ -62,8 +62,3 @@ export const Footer = styled.footer`
   text-align: center;
   background: #6b705f;
 `;
-
-export const Copyright = styled.p`
-  font-size: 14px;
-  color: #fff;
-`;
